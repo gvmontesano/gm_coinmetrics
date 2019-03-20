@@ -1,3 +1,3 @@
 ### Overview
 
-Few examples of Python, Excel, SQL, and VBA projects and exercises done over the years.
+Few examples of Python, Excel, SQL, R, and VBA projects and exercises done over the years.
