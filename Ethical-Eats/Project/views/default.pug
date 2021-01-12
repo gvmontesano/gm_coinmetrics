@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    // Import Google Icon Font
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
+    script(src='/js/script.js')
+    title #{title}
+    link(rel='stylesheet', href='/css/style.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel='stylesheet', href='https://www.w3schools.com/w3css/4/w3.css')
+  body
+    nav.w3-bar.w3-border.w3-light-grey( role="navigation" )
+    a(href="/").w3-bar-item.w3-button Home
+    if locals.user
+      a(href="/user" id="profileDropDown").w3-bar-item.w3-button Profile
+      a(href="/recipes").w3-bar-item.w3-button Recipes
+      a(href="/create_recipe").w3-bar-item.w3-button Create Recipe
+      a(id="qsLogoutBtn" href="/logout").w3-bar-item.w3-button Log Out
+    else
+      a(id="qsLoginBtn" href="/login").w3-bar-item.w3-button Log In
+    main
+      block header
+        header.header
+          h1 #{title}
+      block content

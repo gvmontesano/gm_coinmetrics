@@ -1,0 +1,14 @@
+{
+  "alternatives": [
+    {
+      "ingredient": "Bacon",
+      "alternative": ["Tofu", "Veggie bacon", "Turkey bacon"],
+      "reason": "https://green.harvard.edu/news/ethics-eating-animals"
+    },
+    {
+      "ingredient": "Parmesan",
+      "alternative": ["Yeast flakes", "Daiya cheese"],
+      "reason": "https://www.onegreenplanet.org/animalsandnature/why-is-eating-cheese-cruel-to-cows/"
+    }
+  ]
+}

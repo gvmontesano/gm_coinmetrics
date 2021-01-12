@@ -1,0 +1,45 @@
+extends default
+
+block header
+
+block content
+  div.recipe_card
+      div.recipe_card-image(style=`background: url('/images/healthy-eats.jpeg') top center
+      no-repeat; background-size: cover;`)
+      div.recipe_card-details
+        h1.recipe_card-name
+          | Create Recipe
+        br
+        p.recipe_card-description
+          | Fill in the following form to create your own recipe!
+        p.Ingredient.Options
+        h3 Select Ingredients
+        ul#dynamic-list
+        select#candidate(name='dropdown')
+          option(value='--Protein Options--') --Protein Options--
+          option(value='Chicken') Chicken
+          option(value='Shiitake Mushrooms') Shiitake Mushrooms
+          option(value='Eggs') Eggs
+          option(value='Bacon') Bacon
+          option(value='--Dairy Options') --Dairy Options--
+          option(value='Milk') Milk
+          option(value='Butter') Butter
+          option(value='--Grain Options--') --Grain Options--
+          option(value='Pasta') Pasta
+          option(value='--Vegetable Options--') --Vegetable Options--
+          option(value='Tomato') Tomato
+          option(value='--Baking Options--') --Baking Options--
+          option(value='Chocolate Chips') Chocolate Chips
+          option(value='Sugar') Sugar
+          option(value='Flour') Flour
+        button(onclick='addItem()') add item
+        button(onclick='removeItem()') remove item
+        p.Instructions
+          p.Optional.Instructions
+            h3 Enter Instructions
+            ol#dynamic-text
+            input#option(type='text' placeholder="Enter steps for your recipe.")
+            button(onclick='addI()') add item
+            button(onclick='removeI()') remove item
+        if locals.user
+          a.button.button-home(href=``) Save Recipe

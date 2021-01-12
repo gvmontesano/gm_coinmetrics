@@ -1,0 +1,36 @@
+{
+  "recipe_cards": [
+    {
+      "name": "Eggs and bacon",
+      "description":
+        "A delicious and simple breakfast to kickstart your morning.",
+      "steps": ["1. Use fresh eggs. Fry in non-stick frying pan.", "2. Fry bacon in same pan and wiping off extra grease until crisp."],
+      "category": "breakfast",
+      "ingredients": ["Eggs", "Bacon"],
+      "imgSrc": "eggs_bacon.jpg",
+      "id": 1
+    },
+
+    {
+      "name": "Tomato soup",
+      "description":
+        "Hearty and rich soup that won't leave you feeling too heavy. Use ripe tomatoes for extra flavor.",
+      "steps": ["1. Use a blender to blend tomatoes.", "2. Pour into pot and add chicken broth.", "3. Add small amount of heavy cream.", "4. Pour into bowl, garnish with basil."],
+      "category": "snack",
+      "ingredients": ["Tomato", "Heavy cream", "Chicken broth", "Basil"],
+      "imgSrc": "tomato_soup.jpg",
+      "id": 2
+    },
+
+    {
+      "name": "Pasta carbonara",
+      "description":
+        "A delicious pasta dish from Rome, filled with pieces of pork. Best with flat pasta such as linguine.",
+      "steps": ["1. Boil pasta.", "2. Fry bacon pieces in pan with onions and garlic.", "3. Drain pasta, and while hot, mix in 3 large egg yolks and parmesan."],
+      "category": "lunch",
+      "ingredients": ["Pasta", "Bacon", "Parmesan", "Eggs", "Garlic", "Onions"],
+      "imgSrc": "pasta_carbonara.jpg",
+      "id": 3
+    }
+  ]
+}

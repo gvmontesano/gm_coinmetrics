@@ -1,0 +1,13 @@
+extends default
+
+block content
+  div.container
+    each recipe in recipes
+      div.recipe
+        div.recipe-image(style=`background: url('/images/${recipe.imgSrc}') top center
+        no-repeat; background-size: cover;`)
+        h2.recipe-name
+          | #{recipe.name} 
+        a(href=`/recipe_card?id=${recipe.id}`)
+          | View Recipe Card
+
